@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!-- WhatsApp & Social Media Sharing Preview Tags -->
+<title>Arbaz &amp; Farheen — Wedding Celebration</title>
+<meta name="description" content="Wedding Ceremony of Arbaz Husain & Farheen Saba — 31st October 2026, Kasmar, Bokaro">
+<meta property="og:title" content="Arbaz & Farheen — Wedding Invitation">
+<meta property="og:description" content="Together with their families, cordially invite you to celebrate their Nikah & Walima. Insha'Allah 31st October 2026.">
+<meta property="og:type" content="website">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Amiri:wght@700&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --pink-bg: #FDF3F5;
+    --card-white: #FFFFFF;
+    --border-pink: #EAC9D2;
+    --rose-deep: #962D47;
+    --emerald-dark: #0F291E;
+    --ink-dark: #1F171A;
+    --ink-sub: #544349;
+    --gold-bright: #F5D77F;
+  }
+
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  body{
+    background-color: var(--pink-bg);
+    color: var(--ink-dark);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Canvas Layer for Tap-to-Bloom Flowers */
+  #fxCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 99;
+  }
+
+  /* True Mobile Container */
+  .mobile-shell{
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto;
+    padding: 0 16px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .arabic{ font-family: 'Amiri', serif; }
+  .script{ font-family: 'Alex Brush', cursive; }
+  .serif{ font-family: 'Cormorant Garamond', serif; }
+
+  /* ---------------- SUPER-READABLE SHIMMER TEXT ---------------- */
+  .readable-shimmer {
+    color: var(--rose-deep);
+    background: linear-gradient(
+      110deg,
+      #8A243E 0%,
+      #8A243E 35%,
+      #DDA449 50%,
+      #FFF2B2 53%,
+      #DDA449 56%,
+      #8A243E 70%,
+      #8A243E 100%
+    );
+    background-size: 220% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textSweep 3.8s ease-in-out infinite;
+    display: inline-block;
+    white-space: nowrap;
+    text-shadow: 0 0 1px rgba(138, 36, 62, 0.2);
+  }
+
+  @keyframes textSweep {
+    0% { background-position: 100% 0; }
+    100% { background-position: -100% 0; }
+  }
+
+  /* ---------------- ROTATING LIGHT BORDER ---------------- */
+  .glow-border-box {
+    position: relative;
+    background: var(--card-white);
+    border-radius: 18px;
+    overflow: hidden;
+    padding: 2px;
+    box-shadow: 0 8px 24px rgba(150, 45, 71, 0.08);
+  }
+
+  .glow-border-box::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(
+      transparent 0deg,
+      transparent 180deg,
+      #962D47 240deg,
+      #DDA449 280deg,
+      #FFF6CF 320deg,
+      #962D47 360deg
+    );
+    animation: rotateBorder 3.5s linear infinite;
+    z-index: 1;
+  }
+
+  .glow-inner {
+    position: relative;
+    background: var(--card-white);
+    border-radius: 16px;
+    z-index: 2;
+    padding: 22px 18px;
+  }
+
+  @keyframes rotateBorder {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* Divider */
+  .pink-divider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--rose-deep);
+    margin: 12px auto;
+  }
+  .pink-divider::before, .pink-divider::after{
+    content: "";
+    width: 36px;
+    height: 1.5px;
+    background: linear-gradient(90deg, transparent, var(--border-pink), transparent);
+  }
+
+  /* Hero Section */
+  .hero{
+    min-height: 94vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 16px 30px;
+  }
+
+  .hero .bismillah{
+    font-size: 2.1rem;
+    color: var(--emerald-dark);
+    margin-bottom: 8px;
+    line-height: 1.3;
+    white-space: nowrap;
+  }
+
+  .hero .ayah{
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--emerald-dark);
+    line-height: 1.5;
+    margin: 0 auto 18px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--border-pink);
+  }
+
+  .hero .eyebrow{
+    font-size: 0.74rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--rose-deep);
+    font-weight: 700;
+    margin-bottom: 4px;
+    white-space: nowrap;
+  }
+
+  .hero .request-text{
+    font-size: 0.7rem;
+    color: var(--ink-sub);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+
+  .hero .names-wrap{
+    width: 100%;
+    margin: 8px 0 14px;
+  }
+
+  .hero .names{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    line-height: 1.15;
+    font-weight: 700;
+  }
+
+  .hero .amp{
+    font-size: 1.8rem;
+    color: #B87E26;
+    display: block;
+    margin: 2px 0;
+  }
+
+  .hero .subline{
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--ink-dark);
+    line-height: 1.45;
+  }
+
+  .hero .date-pill{
+    margin-top: 22px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 22px;
+    border-radius: 999px;
+    border: 1.5px solid var(--rose-deep);
+    background: #FFFFFF;
+    box-shadow: 0 6px 20px rgba(150, 45, 71, 0.12);
+    white-space: nowrap;
+  }
+
+  .hero .date-pill span{
+    font-size: 0.74rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--emerald-dark);
+    font-weight: 700;
+  }
+  .hero .date-pill .dot{
+    width: 5px; height: 5px;
+    background: var(--rose-deep);
+    border-radius: 50%;
+  }
+
+  .touch-hint{
+    margin-top: 18px;
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--rose-deep);
+    opacity: 0.85;
+    animation: pulse 2s infinite;
+    white-space: nowrap;
+  }
+  @keyframes pulse{
+    0%, 100%{ opacity: 0.45; }
+    50%{ opacity: 1; }
+  }
+
+  /* Section Spacing */
+  section{
+    padding: 40px 0;
+  }
+
+  .section-title-wrap{
+    text-align: center;
+    margin-bottom: 22px;
+  }
+  .kicker{
+    font-size: 1.3rem;
+    color: var(--rose-deep);
+    margin-bottom: 2px;
+  }
+  .heading{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.1rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  .section-desc{
+    font-size: 0.82rem;
+    color: var(--ink-sub);
+    margin-top: 4px;
+    font-weight: 500;
+  }
+
+  /* Countdown */
+  .countdown-row{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .countdown-unit{ flex: 1; }
+  .countdown-num{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--emerald-dark);
+    line-height: 1;
+  }
+  .countdown-label{
+    font-size: 0.62rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--rose-deep);
+    margin-top: 4px;
+    font-weight: 700;
+  }
+
+  /* Lineage Cards */
+  .lineage-stack{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    user-select: text;
+    -webkit-user-select: text;
+  }
+  .lineage-card{
+    background: var(--card-white);
+    border: 1.5px solid var(--border-pink);
+    border-top: 3px solid var(--rose-deep);
+    border-radius: 16px;
+    padding: 22px 18px;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.02);
+  }
+  .lineage-side{
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--rose-deep);
+    font-weight: 700;
+    margin-bottom: 2px;
+    white-space: nowrap;
+  }
+  .lineage-person{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--emerald-dark);
+    margin-bottom: 6px;
+    white-space: nowrap;
+  }
+  .lineage-address{
+    font-size: 0.8rem;
+    color: var(--ink-dark);
+    line-height: 1.6;
+    font-weight: 500;
+  }
+
+  /* Timeline */
+  .timeline{
+    position: relative;
+    padding-left: 24px;
+  }
+  .timeline::before{
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    background: linear-gradient(180deg, var(--rose-deep) 0%, var(--border-pink) 100%);
+  }
+
+  .t-event{
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .t-event:last-child{ margin-bottom: 0; }
+
+  .t-dot{
+    position: absolute;
+    left: -24px;
+    top: 10px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--pink-bg);
+    border: 2px solid var(--rose-deep);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .t-dot::after{
+    content:"";
+    width: 4px; height: 4px;
+    background: var(--rose-deep);
+    border-radius: 50%;
+  }
+
+  .t-highlight .t-dot{
+    background: var(--rose-deep);
+    border-color: var(--emerald-dark);
+  }
+  .t-highlight .t-dot::after{ background: #FFF; }
+
+  .t-card-static{
+    background: var(--card-white);
+    border: 1.5px solid var(--border-pink);
+    border-radius: 14px;
+    padding: 16px 18px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.02);
+  }
+
+  .t-date{
+    font-size: 0.68rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--rose-deep);
+    font-weight: 700;
+    margin-bottom: 2px;
+    white-space: nowrap;
+  }
+  .t-name{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--emerald-dark);
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+  .t-tag{
+    font-size: 0.78rem;
+    font-style: italic;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    color: var(--rose-deep);
+    margin: 2px 0 6px;
+    white-space: nowrap;
+  }
+  .t-meta{
+    font-size: 0.8rem;
+    color: var(--ink-dark);
+    font-weight: 500;
+    border-top: 1px solid var(--border-pink);
+    padding-top: 6px;
+    margin-top: 6px;
+  }
+
+  /* Venue Card */
+  .venue-inner{
+    text-align: center;
+    padding: 24px 16px;
+    user-select: text;
+    -webkit-user-select: text;
+  }
+  .venue-label{
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--rose-deep);
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  .venue-title{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: var(--emerald-dark);
+    margin: 4px 0 6px;
+    white-space: nowrap;
+  }
+  .venue-desc{
+    font-size: 0.84rem;
+    color: var(--ink-dark);
+    line-height: 1.6;
+    margin-bottom: 18px;
+    font-weight: 500;
+  }
+  .map-btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--emerald-dark);
+    color: #FFF;
+    padding: 11px 26px;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(15, 41, 30, 0.2);
+    user-select: none;
+  }
+  .map-btn:hover{
+    background: var(--rose-deep);
+  }
+
+  /* Details & Small Request Section */
+  .request-card{
+    background: var(--card-white);
+    border: 1.5px solid var(--border-pink);
+    border-radius: 18px;
+    padding: 26px 18px;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.02);
+  }
+  .request-title{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--emerald-dark);
+    margin-bottom: 8px;
+  }
+  .request-text-body{
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--rose-deep);
+    line-height: 1.5;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
+  /* Regards */
+  .regards-card{
+    background: #F8E7EB;
+    border: 1.5px solid var(--border-pink);
+    border-radius: 18px;
+    padding: 28px 18px;
+    text-align: center;
+  }
+  .regards-title{
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--rose-deep);
+    font-weight: 700;
+    margin-bottom: 4px;
+    white-space: nowrap;
+  }
+  .regards-main{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.85rem;
+    font-weight: 700;
+    color: var(--emerald-dark);
+    margin-bottom: 12px;
+    white-space: nowrap;
+  }
+  .regards-family{
+    font-size: 0.82rem;
+    color: var(--ink-dark);
+    line-height: 1.65;
+    font-weight: 500;
+  }
+
+  /* Footer */
+  footer{
+    text-align: center;
+    padding: 36px 16px 48px;
+    border-top: 1.5px solid var(--border-pink);
+  }
+  footer .dua{
+    font-size: 1.55rem;
+    color: var(--emerald-dark);
+    margin-bottom: 8px;
+    line-height: 1.5;
+  }
+  footer .dua-trans{
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--ink-dark);
+    line-height: 1.45;
+    max-width: 380px;
+    margin: 0 auto;
+  }
+  footer .monogram{
+    font-size: 1.9rem;
+    color: var(--rose-deep);
+    margin: 18px 0 6px;
+  }
+  footer .credit{
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-sub);
+    font-weight: 600;
+    white-space: nowrap;
+  }
+</style>
+</head>
+<body>
+
+<canvas id="fxCanvas"></canvas>
+
+<!-- HERO SECTION -->
+<header class="hero">
+  <div class="mobile-shell">
+    
+    <div class="bismillah arabic">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+    
+    <div class="ayah">
+      "And of His signs is that He created for you from yourselves mates that you may find tranquility in them; and He placed between you affection and mercy."
+    </div>
+
+    <div class="eyebrow">Mrs. &amp; Mr. Warshid Anwar</div>
+    <div class="request-text">Request your presence at the wedding ceremony of their son</div>
+
+    <div class="names-wrap">
+      <h1 class="names readable-shimmer">Arbaz Husain</h1>
+      <span class="amp script">weds</span>
+      <h1 class="names readable-shimmer">Farheen Saba</h1>
+    </div>
+
+    <p class="subline">
+      Insha'Allah, on 31st October 2026 (Saturday) surrounded by family, love and prayers.
+    </p>
+
+    <div class="date-pill">
+      <span>31 Oct 2026</span>
+      <span class="dot"></span>
+      <span>Kasmar, Bokaro</span>
+    </div>
+
+    <div class="touch-hint">✨ Tap anywhere on screen for flowers ✨</div>
+
+  </div>
+</header>
+
+<!-- COUNTDOWN SECTION -->
+<section>
+  <div class="mobile-shell">
+    <div class="section-title-wrap">
+      <div class="kicker arabic">دعوت</div>
+      <h2 class="heading readable-shimmer">Counting the Moments</h2>
+      <p class="section-desc">Until we begin our new journey together, insha'Allah.</p>
+    </div>
+
+    <div class="glow-border-box">
+      <div class="glow-inner">
+        <div class="countdown-row">
+          <div class="countdown-unit">
+            <div class="countdown-num" id="cd-days">00</div>
+            <div class="countdown-label">Days</div>
+          </div>
+          <div class="countdown-unit">
+            <div class="countdown-num" id="cd-hours">00</div>
+            <div class="countdown-label">Hours</div>
+          </div>
+          <div class="countdown-unit">
+            <div class="countdown-num" id="cd-mins">00</div>
+            <div class="countdown-label">Mins</div>
+          </div>
+          <div class="countdown-unit">
+            <div class="countdown-num" id="cd-secs">00</div>
+            <div class="countdown-label">Secs</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FAMILIES SECTION -->
+<section>
+  <div class="mobile-shell">
+    <div class="section-title-wrap">
+      <div class="pink-divider">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M12 21a9 9 0 0 1-9-9c0-4.97 4.03-9 9-9 4.97 0 9 4.03 9 9a9 9 0 0 1-9 9zm0 0v-7m0 0a4 4 0 0 0-4-4m4 4a4 4 0 0 1 4-4"/>
+        </svg>
+      </div>
+      <h2 class="heading readable-shimmer">The Families</h2>
+      <p class="section-desc">United with the blessings of parents and elders.</p>
+    </div>
+
+    <div class="lineage-stack">
+      <div class="lineage-card">
+        <div class="lineage-side">Groom's Family</div>
+        <div class="lineage-person">Arbaz Husain</div>
+        <div class="lineage-address">
+          <strong>S/o Warshid Anwar</strong><br>
+          Vill - Garri, P.O. + P.S. - Kasmar<br>
+          Dist. - Bokaro (Jharkhand) 827302
+        </div>
+      </div>
+
+      <div class="lineage-card">
+        <div class="lineage-side">Bride's Family</div>
+        <div class="lineage-person">Farheen Saba</div>
+        <div class="lineage-address">
+          <strong>D/o Israr Ansari</strong><br>
+          Vill - Pipradih, P.O. + P.S. - Chandrapura<br>
+          Dist. - Bokaro (Jharkhand) 828403
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMME TIMELINE -->
+<section>
+  <div class="mobile-shell">
+    <div class="section-title-wrap">
+      <div class="kicker arabic">تقریبات</div>
+      <h2 class="heading readable-shimmer">Wedding Programme</h2>
+      <p class="section-desc">We look forward to celebrating every blessed moment with you.</p>
+    </div>
+
+    <div class="timeline">
+
+      <!-- 29 Oct -->
+      <div class="t-event">
+        <div class="t-dot"></div>
+        <div class="t-card-static">
+          <div class="t-date">Thursday • 29 October 2026</div>
+          <div class="t-name">Quran Khani &amp; Milad</div>
+          <div class="t-tag">Commencing the festivities with du'a</div>
+          <div class="t-meta"><strong>Time:</strong> 08:00 AM Onwards</div>
+        </div>
+      </div>
+
+      <!-- 30 Oct Haldi -->
+      <div class="t-event">
+        <div class="t-dot"></div>
+        <div class="t-card-static">
+          <div class="t-date">Friday • 30 October 2026</div>
+          <div class="t-name">Rasm-e-Haldi</div>
+          <div class="t-tag">Turmeric rituals &amp; family blessings</div>
+          <div class="t-meta"><strong>Time:</strong> 02:00 PM</div>
+        </div>
+      </div>
+
+      <!-- 30 Oct Mehndi -->
+      <div class="t-event">
+        <div class="t-dot"></div>
+        <div class="t-card-static">
+          <div class="t-date">Friday • 30 October 2026</div>
+          <div class="t-name">Mehndi Ki Raat</div>
+          <div class="t-tag">Henna, music &amp; joyful memories</div>
+          <div class="t-meta"><strong>Time:</strong> 07:00 PM</div>
+        </div>
+      </div>
+
+      <!-- 31 Oct Nikah -->
+      <div class="t-event t-highlight">
+        <div class="t-dot"></div>
+        <div class="glow-border-box">
+          <div class="glow-inner" style="padding: 16px;">
+            <div class="t-date" style="color:var(--rose-deep);">Auspicious Occasion • 31 Oct 2026</div>
+            <div class="t-name readable-shimmer">Nikah Ceremony</div>
+            <div class="t-tag">The sacred bond of marriage, Insha'Allah</div>
+            <div class="t-meta" style="line-height: 1.8;">
+              <div><strong>Departure of Barat:</strong> 31st Oct • 08:00 PM</div>
+              <div><strong style="color:var(--rose-deep);">Nikah:</strong> 31st Oct • 11:00 PM</div>
+              <div><strong>Return of Barat:</strong> 01st Nov • 05:00 AM</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 01 Nov Walima -->
+      <div class="t-event">
+        <div class="t-dot"></div>
+        <div class="t-card-static">
+          <div class="t-date">Sunday • 01 November 2026</div>
+          <div class="t-name">Dawat-e-Walima</div>
+          <div class="t-tag">Reception feast to celebrate together</div>
+          <div class="t-meta"><strong>Time:</strong> 07:00 PM Onwards</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- VENUE SECTION -->
+<section>
+  <div class="mobile-shell">
+    <div class="glow-border-box">
+      <div class="glow-inner venue-inner">
+        <div class="pink-divider" style="margin:0 auto 8px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+          </svg>
+        </div>
+        <div class="venue-label">Celebration Venue</div>
+        <h2 class="venue-title readable-shimmer">At Our Residence</h2>
+        <p class="venue-desc">
+          Vill - Garri, P.O. + P.S. - Kasmar,<br>
+          Dist. - Bokaro (Jharkhand) 827302
+        </p>
+        <a href="https://maps.google.com/?q=Kasmar,Bokaro,Jharkhand" target="_blank" class="map-btn">
+          <span>Open in Maps &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- A FEW DETAILS / A SMALL REQUEST SECTION -->
+<section>
+  <div class="mobile-shell">
+    <div class="section-title-wrap">
+      <div class="kicker arabic">تفصیلات</div>
+      <h2 class="heading readable-shimmer">A Few Details</h2>
+    </div>
+
+    <div class="request-card">
+      <div class="pink-divider" style="margin: 0 auto 10px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+      </div>
+      <div class="request-title">A Small Request</div>
+      <p class="request-text-body">
+        "Your presence is the only gift we ask for — and your du'a for our new journey."
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- COMPLIMENTS / WITH WARM REGARDS SECTION -->
+<section>
+  <div class="mobile-shell">
+    <div class="regards-card">
+      <div class="regards-title">With Best Compliments From</div>
+      <div class="regards-main readable-shimmer">Warshid Anwar</div>
+      
+      <div style="width:36px; height:1.5px; background:var(--border-pink); margin:0 auto 14px;"></div>
+
+      <div class="regards-title" style="font-size:0.65rem;">With Warm Regards From</div>
+      <div class="regards-family">
+        <strong>Khurshid Ansari, Murshid Ansari, Razi Ahmad</strong><br>
+        &amp; All Relatives and Friends.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER (FULL SUNNAH DUA) -->
+<footer>
+  <div class="mobile-shell">
+    <!-- Complete Sunnah Marriage Dua -->
+    <div class="dua arabic">بَارَكَ اللَّهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ</div>
+    <div class="dua-trans">
+      "May Allah bless you and shower His blessings upon you, and bring you together in goodness."
+    </div>
+    <div class="monogram script readable-shimmer">Arbaz &amp; Farheen</div>
+    <div class="credit">31 OCTOBER 2026 • BOKARO, JHARKHAND</div>
+  </div>
+</footer>
+
+<!-- TOUCH FLOWERS & SPARKLES SCRIPT -->
+<script>
+  // 1. Countdown Logic
+  const weddingDate = new Date("2026-10-31T23:00:00").getTime();
+  function updateCountdown(){
+    const now = new Date().getTime();
+    let diff = weddingDate - now;
+    if(diff < 0) diff = 0;
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const mins = Math.floor((diff / (1000 * 60)) % 60);
+    const secs = Math.floor((diff / 1000) % 60);
+
+    document.getElementById('cd-days').textContent = String(days).padStart(2, '0');
+    document.getElementById('cd-hours').textContent = String(hours).padStart(2, '0');
+    document.getElementById('cd-mins').textContent = String(mins).padStart(2, '0');
+    document.getElementById('cd-secs').textContent = String(secs).padStart(2, '0');
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+
+  // 2. Interactive Canvas
+  const canvas = document.getElementById('fxCanvas');
+  const ctx = canvas.getContext('2d');
+
+  function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+  resizeCanvas();
+  window.addEventListener('resize', resizeCanvas);
+
+  const flowers = [];
+  const sparkles = [];
+
+  class TouchFlower {
+    constructor(x, y) {
+      this.x = x;
+      this.y = y;
+      this.petalsCount = 5;
+      this.radius = 0;
+      this.targetRadius = 10 + Math.random() * 12;
+      this.bloomSpeed = 0.9 + Math.random() * 0.5;
+      this.angle = Math.random() * Math.PI * 2;
+      this.spin = (Math.random() - 0.5) * 0.04;
+      this.opacity = 1;
+      this.fadeSpeed = 0.016 + Math.random() * 0.01;
+      this.vy = - (1 + Math.random() * 1.6);
+      this.vx = (Math.random() - 0.5) * 1.8;
+
+      const colors = ['#E88295', '#F4A6B6', '#D9657A', '#FCE4E8', '#F9C4CD'];
+      this.petalColor = colors[Math.floor(Math.random() * colors.length)];
+      this.centerColor = '#FAD02C';
+    }
+    update() {
+      if (this.radius < this.targetRadius) this.radius += this.bloomSpeed;
+      this.x += this.vx;
+      this.y += this.vy;
+      this.angle += this.spin;
+      this.opacity -= this.fadeSpeed;
+    }
+    draw() {
+      ctx.save();
+      ctx.translate(this.x, this.y);
+      ctx.rotate(this.angle);
+      ctx.globalAlpha = Math.max(0, this.opacity);
+
+      for (let i = 0; i < this.petalsCount; i++) {
+        const theta = (i * 2 * Math.PI) / this.petalsCount;
+        ctx.save();
+        ctx.rotate(theta);
+        ctx.fillStyle = this.petalColor;
+        ctx.beginPath();
+        ctx.ellipse(0, this.radius * 0.8, this.radius * 0.5, this.radius * 0.8, 0, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.restore();
+      }
+
+      ctx.beginPath();
+      ctx.arc(0, 0, this.radius * 0.35, 0, Math.PI * 2);
+      ctx.fillStyle = this.centerColor;
+      ctx.fill();
+      ctx.restore();
+    }
+  }
+
+  class TouchSparkle {
+    constructor(x, y) {
+      this.x = x;
+      this.y = y;
+      this.size = 2.5 + Math.random() * 4;
+      this.vx = (Math.random() - 0.5) * 3.5;
+      this.vy = (Math.random() - 0.5) * 3.5;
+      this.opacity = 1;
+      this.fade = 0.02 + Math.random() * 0.02;
+    }
+    update() {
+      this.x += this.vx;
+      this.y += this.vy;
+      this.opacity -= this.fade;
+    }
+    draw() {
+      ctx.save();
+      ctx.translate(this.x, this.y);
+      ctx.globalAlpha = Math.max(0, this.opacity);
+      ctx.fillStyle = "#DDA449";
+      ctx.beginPath();
+      for (let i = 0; i < 4; i++) {
+        ctx.rotate(Math.PI / 2);
+        ctx.lineTo(0, this.size);
+        ctx.lineTo(this.size * 0.25, 0);
+      }
+      ctx.fill();
+      ctx.restore();
+    }
+  }
+
+  function spawnTouchEffect(x, y) {
+    for (let i = 0; i < 3; i++) {
+      flowers.push(new TouchFlower(x + (Math.random() - 0.5) * 16, y + (Math.random() - 0.5) * 16));
+    }
+    for (let i = 0; i < 5; i++) {
+      sparkles.push(new TouchSparkle(x, y));
+    }
+  }
+
+  window.addEventListener('touchstart', (e) => {
+    for (let i = 0; i < e.touches.length; i++) {
+      spawnTouchEffect(e.touches[i].clientX, e.touches[i].clientY);
+    }
+  }, { passive: true });
+
+  window.addEventListener('touchmove', (e) => {
+    if (Math.random() > 0.5) spawnTouchEffect(e.touches[0].clientX, e.touches[0].clientY);
+  }, { passive: true });
+
+  window.addEventListener('click', (e) => {
+    spawnTouchEffect(e.clientX, e.clientY);
+  });
+
+  function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    for (let i = sparkles.length - 1; i >= 0; i--) {
+      sparkles[i].update();
+      sparkles[i].draw();
+      if (sparkles[i].opacity <= 0) sparkles.splice(i, 1);
+    }
+
+    for (let i = flowers.length - 1; i >= 0; i--) {
+      flowers[i].update();
+      flowers[i].draw();
+      if (flowers[i].opacity <= 0) flowers.splice(i, 1);
+    }
+
+    requestAnimationFrame(animate);
+  }
+  animate();
+</script>
+
+</body>
+</html>
